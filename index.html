@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shadow of Love</title>
+  <style>
+    /* 全局重置 */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #111;
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    /* 页首 */
+    .header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(120deg, #222, #444);
+    }
+    .header h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+    }
+    .header p {
+      margin-top: 10px;
+      font-size: 1.4rem;
+      opacity: 0.8;
+    }
+    .heart {
+      display: inline-block;
+      color: #e74c3c;
+      animation: beat 1s ease-in-out infinite;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50%      { transform: scale(1.2); }
+    }
+
+    /* 主体：照片和叠字 */
+    .main {
+      position: relative;
+      text-align: center;
+      padding: 40px 0;
+    }
+    .main img {
+      max-width: 80%;
+      height: auto;
+      border: 4px solid #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    }
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3.5rem;
+      color: rgba(255,255,255,0.9);
+      text-shadow: 0 0 10px rgba(0,0,0,0.8);
+      pointer-events: none;
+    }
+
+    /* 页尾 */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 1rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 页首 -->
+  <div class="header">
+    <h1>Shadow of Love</h1>
+    <p>Where you and I become one <span class="heart">❤️</span></p>
+  </div>
+
+  <!-- 主体 -->
+  <div class="main">
+    <img src="IMG_0078.JPG" alt="You & Me Shadows">
+    <div class="overlay">You &amp; Me</div>
+  </div>
+
+  <!-- 页尾 -->
+  <div class="footer">
+    <p>Our shadows dance together under the sun.</p>
+  </div>
+
+</body>
+</html>
+
